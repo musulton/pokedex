@@ -1,0 +1,33 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.typeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.type {
+  background-color: aquamarine;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+  }
+}
