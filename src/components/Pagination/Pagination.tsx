@@ -1,4 +1,3 @@
-import {PaginationWrapper} from "@/components/Pagination/styles";
 import styles from "./Pagination.module.css";
 
 interface Props {

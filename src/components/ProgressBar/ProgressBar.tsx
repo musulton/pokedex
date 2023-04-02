@@ -1,5 +1,4 @@
 import {memo} from "react";
-import {css} from "styled-components"
 import {Child, COLOR_TYPE, Label, Parent, ProgressBarWrapper} from "@/components/ProgressBar/styles";
 
 interface Props {

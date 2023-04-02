@@ -1,10 +1,8 @@
-import {memo, useState} from "react";
-import Image from "next/image";
-
-import {capitalize, getRandomColor, padWithLeadingZeros} from "@/utils/function";
-import {ImageLinkItem} from "@/types";
-import styles from "@/styles/Component.module.css"
+import {memo} from "react";
 import {useRouter} from "next/router";
+
+import {capitalize, getRandomColor, padWithLeadingZeros} from "@/utils/common";
+import {ImageLinkItem} from "@/types";
 import {IdText, ImageStyled, ImgWrapper, NameText, TextWrapper} from "@/components/ImageCard/styles";
 
 interface Props {
@@ -13,7 +11,6 @@ interface Props {
 
 const ImageCard = ({imageItem}: Props): JSX.Element => {
     const router = useRouter()
-    const [isLoading, setLoading] = useState(true)
 
     return (
             <ImgWrapper
@@ -23,10 +20,8 @@ const ImageCard = ({imageItem}: Props): JSX.Element => {
                 <ImageStyled
                     src={imageItem.imageSrc}
                     alt={imageItem.name}
-                    onLoadingComplete={() => setLoading(false)}
                     width={150}
                     height={150}
-                    isLoading={isLoading}
                 />
                 <TextWrapper>
                     <NameText>{capitalize(imageItem.name)}</NameText>

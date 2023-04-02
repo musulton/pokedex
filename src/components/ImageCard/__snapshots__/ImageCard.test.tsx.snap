@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageCard should render ImageCard correctly 1`] = `
+<div
+  class="sc-3a13716d-1 bJAiAP"
+>
+  <img
+    alt="plankton"
+    class="sc-3a13716d-0 hsXJje"
+    data-nimg="1"
+    decoding="async"
+    height="150"
+    loading="lazy"
+    src="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=384&q=75"
+    srcset="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=384&q=75 2x"
+    style="color: transparent;"
+    width="150"
+  />
+  <div
+    class="sc-3a13716d-2 dyKaBw"
+  >
+    <h3
+      class="sc-3a13716d-3 gyiBgf"
+    >
+      Plankton
+    </h3>
+    <h3
+      class="sc-3a13716d-4 bvMZfQ"
+    >
+      #
+      001
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`should render ImageCard correctly 1`] = `
+<div
+  class="sc-3a13716d-1 bJAiAP"
+>
+  <img
+    alt="plankton"
+    class="sc-3a13716d-0 hsXJje"
+    data-nimg="1"
+    decoding="async"
+    height="150"
+    loading="lazy"
+    src="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=384&q=75"
+    srcset="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=384&q=75 2x"
+    style="color: transparent;"
+    width="150"
+  />
+  <div
+    class="sc-3a13716d-2 dyKaBw"
+  >
+    <h3
+      class="sc-3a13716d-3 gyiBgf"
+    >
+      Plankton
+    </h3>
+    <h3
+      class="sc-3a13716d-4 bvMZfQ"
+    >
+      #
+      001
+    </h3>
+  </div>
+</div>
+`;

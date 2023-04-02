@@ -1,7 +1,10 @@
 import React from "react";
 import {GetStaticPaths, GetStaticProps} from "next";
+import Image from "next/image";
+import {useRouter} from "next/router";
 
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
+import Loading from "@/components/Loading";
 import {
     BaseStatText, BaseStatWrapper,
     CharacterWrapper, LeftSection,
@@ -10,10 +13,7 @@ import {
     TypeWrapper
 } from "@/pages/pokemon/[name]/styles";
 import {colors} from "@/pages/pokemon/styled";
-import Image from "next/image";
-import {capitalize} from "@/utils/function";
-import {useRouter} from "next/router";
-import Loading from "@/components/Loading";
+import {capitalize} from "@/utils/common";
 
 type Stat = Array<{ base_stat: number }>
 interface Props {
@@ -102,7 +102,7 @@ const Character: React.FC<Props> = ({pokemon}) => {
 export default Character;
 
 export const getStaticProps: GetStaticProps = async ({params}) => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/${params.name}`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/${params?.name}`);
     const errorCode: boolean | number = res.ok ? false : res.status
 
     if (errorCode) {

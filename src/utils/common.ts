@@ -7,6 +7,6 @@ export const getRandomColor = (): string => {
 
 export const capitalize = (str: string): string => str?.charAt(0)?.toUpperCase() + str?.slice(1);
 
-export const padWithLeadingZeros = (num: number, totalLength: number) => {
+export const padWithLeadingZeros = (num: number, totalLength: number): string => {
     return String(num)?.padStart(totalLength, '0');
 }
