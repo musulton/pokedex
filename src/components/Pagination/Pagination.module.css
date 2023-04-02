@@ -1,0 +1,26 @@
+.paginationWrapper {
+    padding: 20px;
+    text-align: left;
+}
+
+.paginationButton {
+    background-color: #ECF0F1;
+    color: black;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid #2C3E50;
+}
+
+.paginationButton:hover {
+    background-color: #2C3E50;
+    color: white;
+    cursor: pointer;
+    border-color: #2C3E50;
+}
+
+.paginationButton:disabled,
+.paginationButton[disabled]{
+     border: 1px solid #999999;
+     background-color: #cccccc;
+     color: #666666;
+ }

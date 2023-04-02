@@ -1,3 +1,6 @@
+import {PaginationWrapper} from "@/components/Pagination/styles";
+import styles from "./Pagination.module.css";
+
 interface Props {
     currentPage: number
     totalCount: number
@@ -28,13 +31,13 @@ const Pagination = ({
     };
 
     return (
-        <div>
-            <button onClick={previousPage} disabled={currentPage === 1}>
-                Previous
+        <div className={styles.paginationWrapper}>
+            <button className={styles.paginationButton} onClick={previousPage} disabled={currentPage === 1}>
+                &#8249; Previous
             </button>
             &nbsp;
-            <button onClick={nextPage} disabled={currentPage === lastPage}>
-                Next
+            <button className={styles.paginationButton} onClick={nextPage} disabled={currentPage === lastPage}>
+                Next &#8250;
             </button>
         </div>
     );

@@ -1,15 +1,12 @@
 'use client';
 
-import Router from "next/router";
+import {Container, Text} from "@/styles/commonStyled";
 
 const NotFound = (): JSX.Element => {
     return (
-        <div>
-            <h2>Something went wrong!</h2>
-            <button onClick={() => Router.reload()}>
-                Reload
-            </button>
-        </div>
+        <Container>
+            <Text>404 | Resource not found...</Text>
+        </Container>
     );
 }
 

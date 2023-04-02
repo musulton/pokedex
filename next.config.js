@@ -13,6 +13,9 @@ const nextConfig = {
   experimental: {
     largePageDataBytes: 128 * 100000,
   },
+  compiler: {
+    styledComponents: true
+  }
 }
 
 module.exports = nextConfig
