@@ -1,44 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pokemon pages should render Pokemon correctly 1`] = `
-<main
-  class="sc-85dca682-0 eZnztt"
->
-  <div
-    class="sc-85dca682-5 gGzqsq"
+<div>
+  <main
+    class="sc-85dca682-0 eZnztt"
   >
-    <h1
-      class="sc-85dca682-3 ipXhU"
+    <div
+      class="sc-85dca682-5 gGzqsq"
     >
-      Pokémon
-    </h1>
-    <p
-      class="sc-85dca682-4 iCeUpT"
+      <h1
+        class="sc-85dca682-3 ipXhU"
+      >
+        Pokémon
+      </h1>
+      <p
+        class="sc-85dca682-4 iCeUpT"
+      >
+        Pokémon are mysterious creatures with many secrets. Some Pokémon live with humans and some live in the wild in meadows, caves, or the sea.
+      </p>
+    </div>
+    <div
+      class="sc-85dca682-2 ddhbNf"
     >
-      Pokémon are mysterious creatures with many secrets. Some Pokémon live with humans and some live in the wild in meadows, caves, or the sea.
-    </p>
-  </div>
-  <div
-    class="sc-85dca682-2 ddhbNf"
-  >
-    <imagecard
-      imageitem="[object Object]"
-    />
-  </div>
-  <div
-    class="paginationWrapper"
-  >
-    <button
-      class="paginationButton"
+      <imagecard
+        imageitem="[object Object]"
+      />
+    </div>
+    <div
+      class="paginationWrapper"
     >
-      ‹ Previous
-    </button>
-     
-    <button
-      class="paginationButton"
-    >
-      Next ›
-    </button>
-  </div>
-</main>
+      <button
+        class="paginationButton"
+      >
+        ‹ Previous
+      </button>
+       
+      <button
+        class="paginationButton"
+      >
+        Next ›
+      </button>
+    </div>
+  </main>
+</div>
 `;

@@ -1,13 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Loading correctly 1`] = `
-<div
-  class="sc-249c5c88-0 bHOtmB"
->
-  <p
-    class="sc-249c5c88-1 dUHQTv"
+<div>
+  <div
+    class="sc-249c5c88-0 bHOtmB"
   >
-    Loading...
-  </p>
+    <p
+      class="sc-249c5c88-1 dUHQTv"
+    >
+      Loading...
+    </p>
+  </div>
 </div>
 `;

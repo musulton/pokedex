@@ -14,7 +14,7 @@ describe("Pagination component", () => {
 
         const {container} = render(<Pagination {...mockProps} />)
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     })
 
     it("should call onChangePage with params when prev button is click and current page is not first page", () => {

@@ -1,155 +1,161 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pokemon Detail pages should render Pokemon correctly 1`] = `
-<div
-  class="sc-81298d3c-4 cJZwXy"
->
+<div>
   <div
-    class="sc-81298d3c-0 gNyWcF"
+    class="sc-81298d3c-4 cJZwXy"
   >
-    <h1
-      class="sc-81298d3c-1 fpKRMk"
-    >
-      Pokemon
-    </h1>
     <div
-      class="sc-81298d3c-2 bwCFPx"
+      class="sc-81298d3c-0 gNyWcF"
     >
-      <h4
-        class="sc-81298d3c-3 bApKZq"
+      <h1
+        class="sc-81298d3c-1 fpKRMk"
       >
-        type 1
-      </h4>
-      <h4
-        class="sc-81298d3c-3 bApKZq"
+        Pokemon
+      </h1>
+      <div
+        class="sc-81298d3c-2 bwCFPx"
       >
-        type 2
-      </h4>
+        <h4
+          class="sc-81298d3c-3 bApKZq"
+        >
+          type 1
+        </h4>
+        <h4
+          class="sc-81298d3c-3 bApKZq"
+        >
+          type 2
+        </h4>
+      </div>
+      <div
+        class="sc-81298d3c-5 hUkXLA"
+      >
+        <h3
+          class="sc-81298d3c-6 kTtWEv"
+        >
+          Base Stats Information
+        </h3>
+        <div
+          class="sc-2fbdee75-3 hArNqB"
+        >
+          <h3
+            class="sc-2fbdee75-0 fDfHhN"
+          >
+            HP
+             
+          </h3>
+          <div
+            class="sc-2fbdee75-1 boLTRg"
+          >
+            <div
+              class="sc-2fbdee75-2 jduYwp"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-2fbdee75-3 hArNqB"
+        >
+          <h3
+            class="sc-2fbdee75-0 fDfHhN"
+          >
+            Attack
+             
+          </h3>
+          <div
+            class="sc-2fbdee75-1 boLTRg"
+          >
+            <div
+              class="sc-2fbdee75-2 jduYwp"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-2fbdee75-3 hArNqB"
+        >
+          <h3
+            class="sc-2fbdee75-0 fDfHhN"
+          >
+            Defense
+             
+          </h3>
+          <div
+            class="sc-2fbdee75-1 boLTRg"
+          >
+            <div
+              class="sc-2fbdee75-2 jduYwp"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-2fbdee75-3 hArNqB"
+        >
+          <h3
+            class="sc-2fbdee75-0 fDfHhN"
+          >
+            Special Attack
+             
+          </h3>
+          <div
+            class="sc-2fbdee75-1 boLTRg"
+          >
+            <div
+              class="sc-2fbdee75-2 jduYwp"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-2fbdee75-3 hArNqB"
+        >
+          <h3
+            class="sc-2fbdee75-0 fDfHhN"
+          >
+            Special Defence
+             
+          </h3>
+          <div
+            class="sc-2fbdee75-1 boLTRg"
+          >
+            <div
+              class="sc-2fbdee75-2 jduYwp"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-2fbdee75-3 hArNqB"
+        >
+          <h3
+            class="sc-2fbdee75-0 fDfHhN"
+          >
+            Speed
+             
+          </h3>
+          <div
+            class="sc-2fbdee75-1 boLTRg"
+          >
+            <div
+              class="sc-2fbdee75-2 jduYwp"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    <div
-      class="sc-81298d3c-5 hUkXLA"
-    >
-      <h3
-        class="sc-81298d3c-6 kTtWEv"
-      >
-        Base Stats Information
-      </h3>
-      <div
-        class="sc-2fbdee75-3 hArNqB"
-      >
-        <h3
-          class="sc-2fbdee75-0 fDfHhN"
-        >
-          HP
-           
-        </h3>
-        <div
-          class="sc-2fbdee75-1 boLTRg"
-        >
-          <div
-            class="sc-2fbdee75-2 jduYwp"
-          />
-        </div>
-      </div>
-      <div
-        class="sc-2fbdee75-3 hArNqB"
-      >
-        <h3
-          class="sc-2fbdee75-0 fDfHhN"
-        >
-          Attack
-           
-        </h3>
-        <div
-          class="sc-2fbdee75-1 boLTRg"
-        >
-          <div
-            class="sc-2fbdee75-2 jduYwp"
-          />
-        </div>
-      </div>
-      <div
-        class="sc-2fbdee75-3 hArNqB"
-      >
-        <h3
-          class="sc-2fbdee75-0 fDfHhN"
-        >
-          Defense
-           
-        </h3>
-        <div
-          class="sc-2fbdee75-1 boLTRg"
-        >
-          <div
-            class="sc-2fbdee75-2 jduYwp"
-          />
-        </div>
-      </div>
-      <div
-        class="sc-2fbdee75-3 hArNqB"
-      >
-        <h3
-          class="sc-2fbdee75-0 fDfHhN"
-        >
-          Special Attack
-           
-        </h3>
-        <div
-          class="sc-2fbdee75-1 boLTRg"
-        >
-          <div
-            class="sc-2fbdee75-2 jduYwp"
-          />
-        </div>
-      </div>
-      <div
-        class="sc-2fbdee75-3 hArNqB"
-      >
-        <h3
-          class="sc-2fbdee75-0 fDfHhN"
-        >
-          Special Defence
-           
-        </h3>
-        <div
-          class="sc-2fbdee75-1 boLTRg"
-        >
-          <div
-            class="sc-2fbdee75-2 jduYwp"
-          />
-        </div>
-      </div>
-      <div
-        class="sc-2fbdee75-3 hArNqB"
-      >
-        <h3
-          class="sc-2fbdee75-0 fDfHhN"
-        >
-          Speed
-           
-        </h3>
-        <div
-          class="sc-2fbdee75-1 boLTRg"
-        >
-          <div
-            class="sc-2fbdee75-2 jduYwp"
-          />
-        </div>
-      </div>
-    </div>
+    <img
+      alt="Pokemon"
+      data-nimg="1"
+      decoding="async"
+      height="400"
+      loading="lazy"
+      src="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=828&q=75"
+      srcset="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=828&q=75 2x"
+      style="color: transparent;"
+      width="400"
+    />
   </div>
-  <img
-    alt="Pokemon"
-    data-nimg="1"
-    decoding="async"
-    height="400"
-    loading="lazy"
-    src="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=828&q=75"
-    srcset="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=640&q=75 1x, /_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=828&q=75 2x"
-    style="color: transparent;"
-    width="400"
-  />
 </div>
 `;
 
-exports[`Pokemon Detail pages should render Pokemon when loading 1`] = `<loading />`;
+exports[`Pokemon Detail pages should render Pokemon when loading 1`] = `
+<div>
+  <loading />
+</div>
+`;

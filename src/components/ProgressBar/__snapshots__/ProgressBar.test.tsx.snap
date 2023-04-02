@@ -1,85 +1,93 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Progressbar component should render ProgressBar correctly with progress less than 40% 1`] = `
-<div
-  class="sc-2fbdee75-3 hArNqB"
->
-  <h3
-    class="sc-2fbdee75-0 fDfHhN"
-  >
-    Test
-     
-    39
-  </h3>
+<div>
   <div
-    class="sc-2fbdee75-1 boLTRg"
+    class="sc-2fbdee75-3 hArNqB"
   >
+    <h3
+      class="sc-2fbdee75-0 fDfHhN"
+    >
+      Test
+       
+      39
+    </h3>
     <div
-      class="sc-2fbdee75-2 eVeCPU"
-    />
+      class="sc-2fbdee75-1 boLTRg"
+    >
+      <div
+        class="sc-2fbdee75-2 eVeCPU"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Progressbar component should render ProgressBar correctly with progress more than 40% 1`] = `
-<div
-  class="sc-2fbdee75-3 hArNqB"
->
-  <h3
-    class="sc-2fbdee75-0 fDfHhN"
-  >
-    Test
-     
-    59
-  </h3>
+<div>
   <div
-    class="sc-2fbdee75-1 boLTRg"
+    class="sc-2fbdee75-3 hArNqB"
   >
+    <h3
+      class="sc-2fbdee75-0 fDfHhN"
+    >
+      Test
+       
+      59
+    </h3>
     <div
-      class="sc-2fbdee75-2 cHPnqN"
-    />
+      class="sc-2fbdee75-1 boLTRg"
+    >
+      <div
+        class="sc-2fbdee75-2 cHPnqN"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Progressbar component should render ProgressBar correctly with progress more than 60% 1`] = `
-<div
-  class="sc-2fbdee75-3 hArNqB"
->
-  <h3
-    class="sc-2fbdee75-0 fDfHhN"
-  >
-    Test
-     
-    79
-  </h3>
+<div>
   <div
-    class="sc-2fbdee75-1 boLTRg"
+    class="sc-2fbdee75-3 hArNqB"
   >
+    <h3
+      class="sc-2fbdee75-0 fDfHhN"
+    >
+      Test
+       
+      79
+    </h3>
     <div
-      class="sc-2fbdee75-2 fwXIsN"
-    />
+      class="sc-2fbdee75-1 boLTRg"
+    >
+      <div
+        class="sc-2fbdee75-2 fwXIsN"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`Progressbar component should render ProgressBar correctly with progress more than 80% 1`] = `
-<div
-  class="sc-2fbdee75-3 hArNqB"
->
-  <h3
-    class="sc-2fbdee75-0 fDfHhN"
-  >
-    Test
-     
-    90
-  </h3>
+<div>
   <div
-    class="sc-2fbdee75-1 boLTRg"
+    class="sc-2fbdee75-3 hArNqB"
   >
+    <h3
+      class="sc-2fbdee75-0 fDfHhN"
+    >
+      Test
+       
+      90
+    </h3>
     <div
-      class="sc-2fbdee75-2 gYMCNM"
-    />
+      class="sc-2fbdee75-1 boLTRg"
+    >
+      <div
+        class="sc-2fbdee75-2 gYMCNM"
+      />
+    </div>
   </div>
 </div>
 `;

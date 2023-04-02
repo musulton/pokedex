@@ -1,20 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination component should render Pagination correctly 1`] = `
-<div
-  class="paginationWrapper"
->
-  <button
-    class="paginationButton"
-    disabled=""
+<div>
+  <div
+    class="paginationWrapper"
   >
-    ‹ Previous
-  </button>
-   
-  <button
-    class="paginationButton"
-  >
-    Next ›
-  </button>
+    <button
+      class="paginationButton"
+      disabled=""
+    >
+      ‹ Previous
+    </button>
+     
+    <button
+      class="paginationButton"
+    >
+      Next ›
+    </button>
+  </div>
 </div>
 `;

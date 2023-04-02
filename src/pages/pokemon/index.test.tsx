@@ -34,6 +34,6 @@ describe("Pokemon pages", () => {
     it("should render Pokemon correctly", () => {
         const {container} = render(<Pokemon />)
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     })
 })

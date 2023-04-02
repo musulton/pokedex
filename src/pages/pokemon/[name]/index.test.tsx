@@ -34,7 +34,7 @@ describe("Pokemon Detail pages", () => {
 
         const {container} = render(<PokemonDetail pokemon={pokemonData} />)
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     })
 
     it("should render Pokemon when loading", () => {
@@ -62,7 +62,7 @@ describe("Pokemon Detail pages", () => {
 
         const {container} = render(<PokemonDetail pokemon={pokemonData} />)
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     })
 
     it("getStaticPaths - should return data correctly", () => {

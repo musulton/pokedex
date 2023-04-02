@@ -26,7 +26,7 @@ describe("ImageCard", () => {
     it("should render ImageCard correctly", () => {
         const {container} = render(<ImageCard imageItem={imageItemProps} />)
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     })
 
     it("should navigate to detail page when image is clicked", () => {

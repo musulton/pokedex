@@ -11,7 +11,7 @@ describe("Progressbar component", () => {
 
         const {container} = render(<ProgressBar {...mockProps} />)
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     })
 
     it("should render ProgressBar correctly with progress more than 40%", () => {
@@ -22,7 +22,7 @@ describe("Progressbar component", () => {
 
         const {container} = render(<ProgressBar {...mockProps} />)
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     })
 
     it("should render ProgressBar correctly with progress more than 60%", () => {
@@ -33,7 +33,7 @@ describe("Progressbar component", () => {
 
         const {container} = render(<ProgressBar {...mockProps} />)
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     })
 
     it("should render ProgressBar correctly with progress more than 80%", () => {
@@ -44,6 +44,6 @@ describe("Progressbar component", () => {
 
         const {container} = render(<ProgressBar {...mockProps} />)
 
-        expect(container.firstChild).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     })
 })

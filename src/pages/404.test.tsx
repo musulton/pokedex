@@ -5,5 +5,5 @@ import NotFound from "@/pages/404";
 it("should render NotFound correctly", () => {
     const {container} = render(<NotFound />)
 
-    expect(container.firstChild).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
 })
