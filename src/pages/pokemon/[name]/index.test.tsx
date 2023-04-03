@@ -1,5 +1,5 @@
 import {render} from "@testing-library/react";
-import router from "next/router";
+import {useRouter} from "next/router";
 
 import PokemonDetail, {getStaticPaths, getStaticProps} from "./index";
 
@@ -7,11 +7,9 @@ jest
     .mock("../../../components/Loading", () => "Loading")
     .mock("../../../components/ProgressBar", () => "ProgressBar")
     .mock('next/router', () => ({
-        useRouter() {
-            return ({
-                isFallback: false
-            });
-        },
+        useRouter: jest.fn(() => ({
+            isFallback: false
+        }))
     }))
 
 describe("Pokemon Detail pages", () => {
@@ -39,7 +37,6 @@ describe("Pokemon Detail pages", () => {
     })
 
     it("should render Pokemon when loading", () => {
-        const useRouter = jest.spyOn(router, "useRouter")
         useRouter.mockImplementation(() => ({
             isFallback: true
         }))

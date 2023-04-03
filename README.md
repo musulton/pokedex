@@ -34,8 +34,12 @@ This is a source repository for GovTech - Take Home Test Project
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Demo
-See applications that have been deployed 
+# Screenshot
+- Pokemon List
+  ![pokemon list](https://github.com/musulton/govtech-testproject/blob/main/pokemon-list.png?raw=true)
+- Pokemon Detail
+  ![pokemon detail](https://github.com/musulton/govtech-testproject/blob/main/pokemon-detail.png?raw=true)
+
 
 # Test Coverage
 ![test coverage](https://github.com/musulton/govtech-testproject/blob/main/test-coverage.png?raw=true)
