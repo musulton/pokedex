@@ -1,6 +1,6 @@
 import {render} from "@testing-library/react";
 
-import Pokemon from "@/pages/pokemon/index";
+import Pokemon from "./index";
 import React, {useState} from "react";
 
 jest

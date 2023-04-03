@@ -1,6 +1,6 @@
 import {fireEvent, render, screen} from "@testing-library/react";
 
-import ImageCard from "@/components/ImageCard/ImageCard";
+import ImageCard from "./ImageCard";
 
 const mockPush = jest.fn()
 jest

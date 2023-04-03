@@ -1,7 +1,7 @@
 import {render} from "@testing-library/react";
 import router from "next/router";
 
-import PokemonDetail, {getStaticPaths, getStaticProps} from "@/pages/pokemon/[name]/index";
+import PokemonDetail, {getStaticPaths, getStaticProps} from "./index";
 
 jest
     .mock("../../../components/Loading", () => "Loading")
