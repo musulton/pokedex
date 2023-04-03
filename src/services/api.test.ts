@@ -29,12 +29,14 @@ describe("API services", () => {
         global.fetch = originalFetch
     })
 
-    it("should fetch and set data correctly", async () => {
-        const mockSetData = jest.fn();
-        await fetchData(1, mockSetData)
+    it("should fetch and return data correctly", async () => {
+        const params: { page: string } = {
+            page: "2"
+        }
+        const result = await fetchData(params)
 
         expect(global.fetch).toHaveBeenCalledTimes(2)
-        expect(mockSetData).toHaveBeenCalledWith({
+        expect(result).toEqual({
             count: expect.any(Number),
             pokemon: expect.any(Array)
         })

@@ -10,7 +10,9 @@ exports[`Pagination component should render Pagination correctly 1`] = `
   >
     ‹ Previous
   </button>
-   
+  <div
+    class="pageNumberWrapper"
+  />
   <button
     class="paginationButton"
   >

@@ -2,35 +2,35 @@
 
 exports[`Pokemon Detail pages should render Pokemon correctly 1`] = `
 <div
-  class="sc-81298d3c-4 cJZwXy"
+  class="sc-d705d556-4 lfqvZl"
 >
   <div
-    class="sc-81298d3c-0 gNyWcF"
+    class="sc-d705d556-0 bmlDWg"
   >
     <h1
-      class="sc-81298d3c-1 fpKRMk"
+      class="sc-d705d556-1 cIkeQW"
     >
       Pokemon
     </h1>
     <div
-      class="sc-81298d3c-2 bwCFPx"
+      class="sc-d705d556-2 hPiILT"
     >
       <h4
-        class="sc-81298d3c-3 bApKZq"
+        class="sc-d705d556-3 dGxJTs"
       >
         type 1
       </h4>
       <h4
-        class="sc-81298d3c-3 bApKZq"
+        class="sc-d705d556-3 dGxJTs"
       >
         type 2
       </h4>
     </div>
     <div
-      class="sc-81298d3c-5 hUkXLA"
+      class="sc-d705d556-6 bQPJQV"
     >
       <h3
-        class="sc-81298d3c-6 kTtWEv"
+        class="sc-d705d556-7 jLYehA"
       >
         Base Stats Information
       </h3>
@@ -140,6 +140,7 @@ exports[`Pokemon Detail pages should render Pokemon correctly 1`] = `
   </div>
   <img
     alt="Pokemon"
+    class="sc-d705d556-5 hdHGVf"
     data-nimg="1"
     decoding="async"
     height="400"

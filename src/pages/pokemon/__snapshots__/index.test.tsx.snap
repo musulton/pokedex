@@ -1,44 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pokemon pages should render Pokemon correctly 1`] = `
-<main
-  class="sc-85dca682-0 eZnztt"
+<div
+  class="sc-249c5c88-0 bHOtmB"
 >
-  <div
-    class="sc-85dca682-5 gGzqsq"
+  <p
+    class="sc-249c5c88-1 dUHQTv"
   >
-    <h1
-      class="sc-85dca682-3 ipXhU"
-    >
-      Pokémon
-    </h1>
-    <p
-      class="sc-85dca682-4 iCeUpT"
-    >
-      Pokémon are mysterious creatures with many secrets. Some Pokémon live with humans and some live in the wild in meadows, caves, or the sea.
-    </p>
-  </div>
-  <div
-    class="sc-85dca682-2 ddhbNf"
-  >
-    <imagecard
-      imageitem="[object Object]"
-    />
-  </div>
-  <div
-    class="paginationWrapper"
-  >
-    <button
-      class="paginationButton"
-    >
-      ‹ Previous
-    </button>
-     
-    <button
-      class="paginationButton"
-    >
-      Next ›
-    </button>
-  </div>
-</main>
+    Loading...
+  </p>
+</div>
 `;

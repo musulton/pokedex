@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error page should render 404 error correctly 1`] = `
+<div
+  class="sc-249c5c88-0 bHOtmB"
+>
+  <p
+    class="sc-249c5c88-1 dUHQTv"
+  >
+    404 | Resource not found...
+  </p>
+</div>
+`;
+
+exports[`Error page should render internal server error correctly 1`] = `
+<div
+  class="sc-249c5c88-0 bHOtmB"
+>
+  <p
+    class="sc-249c5c88-1 dUHQTv"
+  >
+    Internal server error...
+  </p>
+</div>
+`;

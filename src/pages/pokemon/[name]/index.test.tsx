@@ -1,4 +1,5 @@
 import {render} from "@testing-library/react";
+import router from "next/router";
 
 import PokemonDetail, {getStaticPaths, getStaticProps} from "@/pages/pokemon/[name]/index";
 
@@ -38,7 +39,7 @@ describe("Pokemon Detail pages", () => {
     })
 
     it("should render Pokemon when loading", () => {
-        const useRouter = jest.spyOn(require("next/router"), "useRouter")
+        const useRouter = jest.spyOn(router, "useRouter")
         useRouter.mockImplementation(() => ({
             isFallback: true
         }))

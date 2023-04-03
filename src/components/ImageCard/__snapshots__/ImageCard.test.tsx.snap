@@ -2,11 +2,11 @@
 
 exports[`ImageCard should render ImageCard correctly 1`] = `
 <div
-  class="sc-3a13716d-1 bJAiAP"
+  class="sc-e32c5871-1 egzCPW"
 >
   <img
     alt="plankton"
-    class="sc-3a13716d-0 hsXJje"
+    class="sc-e32c5871-0 irEzhj"
     data-nimg="1"
     decoding="async"
     height="150"
@@ -17,49 +17,15 @@ exports[`ImageCard should render ImageCard correctly 1`] = `
     width="150"
   />
   <div
-    class="sc-3a13716d-2 dyKaBw"
+    class="sc-e32c5871-2 kXRkdE"
   >
     <h3
-      class="sc-3a13716d-3 gyiBgf"
+      class="sc-e32c5871-3 fglpED"
     >
       Plankton
     </h3>
     <h3
-      class="sc-3a13716d-4 bvMZfQ"
-    >
-      #
-      001
-    </h3>
-  </div>
-</div>
-`;
-
-exports[`should render ImageCard correctly 1`] = `
-<div
-  class="sc-3a13716d-1 bJAiAP"
->
-  <img
-    alt="plankton"
-    class="sc-3a13716d-0 hsXJje"
-    data-nimg="1"
-    decoding="async"
-    height="150"
-    loading="lazy"
-    src="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=384&q=75"
-    srcset="/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F45544958%3Fv%3D4&w=384&q=75 2x"
-    style="color: transparent;"
-    width="150"
-  />
-  <div
-    class="sc-3a13716d-2 dyKaBw"
-  >
-    <h3
-      class="sc-3a13716d-3 gyiBgf"
-    >
-      Plankton
-    </h3>
-    <h3
-      class="sc-3a13716d-4 bvMZfQ"
+      class="sc-e32c5871-4 hoENgU"
     >
       #
       001

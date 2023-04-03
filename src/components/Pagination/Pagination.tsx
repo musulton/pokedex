@@ -24,8 +24,6 @@ const Pagination = ({
     minPageLimit
 }: Props): JSX.Element => {
     const lastPage: number = Math.ceil(totalCount / pageSize)
-    console.log("last", lastPage)
-
     const pages = useMemo(() => {
         const _pages = []
         for (let i = 1; i <= lastPage; i++) {
