@@ -1,6 +1,6 @@
 import {render} from "@testing-library/react";
 
-import Loading from "./Loading";
+import Loading from "../../src/components/Loading/Loading";
 
 it("should render Loading correctly", () => {
     const {container} = render(<Loading />)

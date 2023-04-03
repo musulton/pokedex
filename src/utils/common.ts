@@ -1,4 +1,4 @@
-import {colors} from "@/pages/pokemon/styled";
+import {colors} from "@/styles/pokemonStyled";
 
 export const getRandomColor = (): string => {
     const randomPick = Math.floor(Math.random() * colors.length);

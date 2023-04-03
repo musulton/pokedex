@@ -1,11 +1,11 @@
 import {render} from "@testing-library/react";
 import {useRouter} from "next/router";
 
-import PokemonDetail, {getStaticPaths, getStaticProps} from "./index";
+import PokemonDetail, {getStaticProps, getStaticPaths} from "../../src/pages/pokemon/[name]";
 
 jest
-    .mock("../../../components/Loading", () => "Loading")
-    .mock("../../../components/ProgressBar", () => "ProgressBar")
+    .mock("../../src/components/Loading", () => "Loading")
+    .mock("../../src/components/ProgressBar", () => "ProgressBar")
     .mock('next/router', () => ({
         useRouter: jest.fn(() => ({
             isFallback: false

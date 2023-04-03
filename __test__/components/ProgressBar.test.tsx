@@ -1,6 +1,6 @@
 import {render} from "@testing-library/react";
 
-import ProgressBar from "./ProgressBar";
+import ProgressBar from "../../src/components/ProgressBar/ProgressBar";
 
 describe("Progressbar component", () => {
     it("should render ProgressBar correctly with progress less than 40%", () => {

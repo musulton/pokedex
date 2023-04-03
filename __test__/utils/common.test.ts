@@ -1,5 +1,5 @@
-import {capitalize, getRandomColor, padWithLeadingZeros} from "./common";
-import {colors} from "../pages/pokemon/styled";
+import {capitalize, getRandomColor, padWithLeadingZeros} from "../../src/utils/common";
+import {colors} from "../../src/styles/pokemonStyled";
 
 describe("Common utils", () => {
     it("getRandomColor - should return color from colors array", () => {

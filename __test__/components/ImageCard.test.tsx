@@ -1,6 +1,6 @@
 import {fireEvent, render, screen} from "@testing-library/react";
 
-import ImageCard from "./ImageCard";
+import ImageCard from "../../src/components/ImageCard/ImageCard";
 
 const mockPush = jest.fn()
 jest
@@ -11,8 +11,8 @@ jest
             });
         },
     }))
-    .mock("../../utils/common", () => ({
-        ...jest.requireActual("../../utils/common"),
+    .mock("../../src/utils/common", () => ({
+        ...jest.requireActual("../../src/utils/common"),
         getRandomColor: jest.fn().mockImplementation(() => "white")
     }))
 

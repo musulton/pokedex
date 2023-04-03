@@ -5,7 +5,7 @@ import Pagination from "@/components/Pagination/Pagination";
 import ImageCard from "@/components/ImageCard";
 import Loading from "@/components/Loading";
 import Error from "@/pages/_error";
-import {Description, GridStyled, InfoContainer, MainStyled, Title} from "@/pages/pokemon/styled";
+import {Description, GridStyled, InfoContainer, MainStyled, Title} from "@/styles/pokemonStyled";
 import {fetchData} from "@/services/api";
 import useQuery from "@/hook/useQuery";
 

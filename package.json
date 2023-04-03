@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:dev": "env-cmd -f .env.development npm run build && npm run start",
     "start": "next start",
     "lint": "next lint",
     "test": "jest"
@@ -13,6 +14,7 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
+    "env-cmd": "^10.1.0",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",

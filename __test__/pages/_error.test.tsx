@@ -1,6 +1,6 @@
 import {render} from "@testing-library/react";
 
-import Error from "@/pages/_error";
+import Error from "../../src/pages/_error";
 
 describe("Error page", () => {
     it("should render 404 error correctly", () => {

@@ -10,7 +10,7 @@ import {
     PokemonName,
     TypeName,
     TypeWrapper
-} from "@/pages/pokemon/[name]/styles";
+} from "@/styles/pokemonNameStyled";
 import {capitalize} from "@/utils/common";
 import pokemonBall from "@/assets/pokemon-ball.png"
 

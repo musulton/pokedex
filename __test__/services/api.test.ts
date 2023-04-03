@@ -1,4 +1,4 @@
-import {fetchData} from "./api";
+import {fetchData} from "../../src/services/api";
 
 describe("API services", () => {
     const originalFetch = global.fetch

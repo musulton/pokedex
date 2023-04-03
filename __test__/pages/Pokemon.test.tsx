@@ -1,15 +1,15 @@
 import {render} from "@testing-library/react";
 
-import Pokemon from "./index";
+import Pokemon from "../../src/pages/pokemon";
 import React, {useState} from "react";
 
 jest
-    .mock("../../components/ImageCard", () => "ImageCard")
-    .mock("../../services/api", () => ({
+    .mock("../../src/components/ImageCard", () => "ImageCard")
+    .mock("../../src/services/api", () => ({
         fetchData: jest.fn()
     }))
-    .mock("../../utils/common", () => ({
-        ...jest.requireActual("../../utils/common"),
+    .mock("../../src/utils/common", () => ({
+        ...jest.requireActual("../../src/utils/common"),
         getRandomColor: jest.fn().mockImplementation(() => "white")
     }))
     .mock('react', () => ({
