@@ -10,6 +10,7 @@ import {fetchData} from "@/services/api";
 import useQuery from "@/hook/useQuery";
 
 export const PAGE_SIZE = 9
+const PAGE_NUMBER_LIMIT = 5
 
 export interface Data {
     count: number
@@ -18,6 +19,9 @@ export interface Data {
 
 const Pokemon = (): JSX.Element => {
     const [currentPage, setCurrentPage] = useState<number>(1);
+    const [maxPageLimit, setMaxPageLimit] = useState(PAGE_NUMBER_LIMIT)
+    const [minPageLimit, setMinPageLimit] = useState(0)
+
     const {data, error, loading} = useQuery<Data>(
         fetchData,
         {
@@ -47,6 +51,11 @@ const Pokemon = (): JSX.Element => {
               ))}
           </GridStyled>
           <Pagination
+              onChangeMaxPageLimit={setMaxPageLimit}
+              onChangeMinPageLimit={setMinPageLimit}
+              maxPageLimit={maxPageLimit}
+              minPageLimit={minPageLimit}
+              pageNumberLimit={PAGE_NUMBER_LIMIT}
               onChangePage={setCurrentPage}
               currentPage={currentPage}
               pageSize={PAGE_SIZE}

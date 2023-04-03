@@ -1,6 +1,5 @@
 import React from "react";
 import {GetStaticPaths, GetStaticProps} from "next";
-import Image from "next/image";
 import {useRouter} from "next/router";
 
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
@@ -14,6 +13,7 @@ import {
 } from "@/pages/pokemon/[name]/styles";
 import {colors} from "@/pages/pokemon/styled";
 import {capitalize} from "@/utils/common";
+import pokemonBall from "@/assets/pokemon-ball.png"
 
 type Stat = Array<{ base_stat: number }>
 interface Props {
@@ -90,7 +90,7 @@ const Character: React.FC<Props> = ({pokemon}) => {
             </LeftSection>
 
             <ImageStyled
-                src={pokemon?.sprites?.other?.dream_world?.front_default as string}
+                src={pokemon?.sprites?.other?.dream_world?.front_default || pokemonBall}
                 alt={pokemon?.name as string}
                 width={400}
                 height={400}

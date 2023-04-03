@@ -1,6 +1,7 @@
 .paginationWrapper {
     padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .paginationButton {
@@ -12,11 +13,41 @@
     margin: 0 5px;
 }
 
+.pageNumberButton {
+    background-color: #ECF0F1;
+    color: black;
+    padding: 10px;
+    border: 2px solid #2C3E50;
+    margin: 0 5px;
+}
+
+.pageNumberButton:hover {
+    background-color: #2C3E50;
+    color: white;
+    cursor: pointer;
+    border-color: #2C3E50;
+}
+
+.pageNumberButton:disabled,
+.pageNumberButton[disabled]{
+    border: 1px solid #999999;
+    background-color: #2C3E50;
+    color: white;
+}
+
 .paginationButton:hover {
     background-color: #2C3E50;
     color: white;
     cursor: pointer;
     border-color: #2C3E50;
+}
+
+.dots {
+    background-color: #cccccc;
+    color: black;
+    margin: 0 5px;
+    border: none;
+    padding: 10px;
 }
 
 .paginationButton:disabled,
@@ -25,3 +56,27 @@
      background-color: #cccccc;
      color: #666666;
  }
+
+.pageNumberWrapper {
+    justify-content: center;
+    text-align: center;
+}
+
+@media(max-width: 767px) {
+    .paginationWrapper {
+        flex-direction: column;
+    }
+
+    .paginationButton {
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .dots {
+        margin: 5px;
+    }
+
+    .pageNumberButton {
+        margin: 5px;
+    }
+}

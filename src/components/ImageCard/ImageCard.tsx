@@ -4,6 +4,7 @@ import {useRouter} from "next/router";
 import {capitalize, getRandomColor, padWithLeadingZeros} from "@/utils/common";
 import {ImageLinkItem} from "@/types";
 import {IdText, ImageStyled, ImgWrapper, NameText, TextWrapper} from "@/components/ImageCard/styles";
+import pokemonBall from "@/assets/pokemon-ball.png"
 
 interface Props {
     imageItem: ImageLinkItem
@@ -18,8 +19,8 @@ const ImageCard = ({imageItem}: Props): JSX.Element => {
                 bgColor={getRandomColor()}
             >
                 <ImageStyled
-                    src={imageItem.imageSrc}
-                    alt={imageItem.name}
+                    src={imageItem?.imageSrc || pokemonBall}
+                    alt={imageItem?.name}
                     width={150}
                     height={150}
                 />
