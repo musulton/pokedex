@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Head>
               <title>Pokemon site</title>
               <meta name='description' content='Pokémon are mysterious creatures with many secrets.' />
+              <meta name="viewport" content="width=device-width, initial-scale=1" />
           </Head>
           <main className={inter.className}>
               <Component {...pageProps} />

@@ -7,7 +7,7 @@ import ProgressBar from "@/components/ProgressBar/ProgressBar";
 import Loading from "@/components/Loading";
 import {
     BaseStatText, BaseStatWrapper,
-    CharacterWrapper, LeftSection,
+    CharacterWrapper, ImageStyled, LeftSection,
     PokemonName,
     TypeName,
     TypeWrapper
@@ -89,7 +89,7 @@ const Character: React.FC<Props> = ({pokemon}) => {
                 <StatBar stats={pokemon?.stats as Stat} />
             </LeftSection>
 
-            <Image
+            <ImageStyled
                 src={pokemon?.sprites?.other?.dream_world?.front_default as string}
                 alt={pokemon?.name as string}
                 width={400}

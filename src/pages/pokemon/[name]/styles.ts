@@ -1,11 +1,16 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const LeftSection = styled.div`
   display: flex;
   flex-direction: column;
   width: 30%;
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 30px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 `
 export const PokemonName = styled.h1`
   color: black;
@@ -32,11 +37,27 @@ export const TypeName = styled.h4`
 
 export const CharacterWrapper = styled.div`
   display: flex;
-  height: 100vh;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: aliceblue;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 25px 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+  }
+`
+
+export const ImageStyled = styled(Image)`
+  height: 400px;
+
+  @media (max-width: 767px) {
+    height: 350px;
+  }
 `
 
 export const BaseStatWrapper = styled.div`

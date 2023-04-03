@@ -34,7 +34,6 @@ const Pagination = ({
             <button className={styles.paginationButton} onClick={previousPage} disabled={currentPage === 1}>
                 &#8249; Previous
             </button>
-            &nbsp;
             <button className={styles.paginationButton} onClick={nextPage} disabled={currentPage === lastPage}>
                 Next &#8250;
             </button>

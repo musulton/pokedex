@@ -1,14 +1,19 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-export const ImageStyled = styled(Image)`
-  width: auto;
-  height: 130px;
-`
-
 interface ImgWrapperProps {
     bgColor: string
 }
+
+export const ImageStyled = styled(Image)`
+  width: auto;
+  height: 130px;
+  
+  @media(max-width: 768px) {
+    width: auto;
+    height: 60px;
+  }
+`
 
 export const ImgWrapper = styled.div<ImgWrapperProps>`
   margin: 5px;
@@ -31,6 +36,11 @@ export const ImgWrapper = styled.div<ImgWrapperProps>`
     color: #fff;
     background-color: #2C3E50;
   }
+
+  @media(max-width: 768px) {
+    width: 80px;
+    height: 100px;
+  }
 `
 
 export const TextWrapper = styled.div`
@@ -42,6 +52,10 @@ export const NameText = styled.h3`
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+
+  @media(max-width: 768px) {
+    font-size: 14px;
+  }
 `
 
 export const IdText = styled.h3`

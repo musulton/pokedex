@@ -10,12 +10,19 @@ export const MainStyled = styled.main`
   padding: 1rem 6rem;
 `
 
-export const Container = styled.div`
-`
-
 export const GridStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  
+  @media(max-width: 767px) {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-column-gap: 35px;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    grid-column-gap: 30px;
+  }
 `
 
 export const Title = styled.h1`
@@ -28,5 +35,5 @@ export const Description = styled.p`
 `
 
 export const InfoContainer = styled.div`
-  margin: 25px 0;
+  margin: 20px 0;
 `
