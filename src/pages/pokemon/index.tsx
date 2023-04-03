@@ -1,10 +1,13 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 import {ImageLinkItem} from "@/types";
 import Pagination from "@/components/Pagination/Pagination";
 import ImageCard from "@/components/ImageCard";
+import Loading from "@/components/Loading";
+import Error from "@/pages/_error";
 import {Description, GridStyled, InfoContainer, MainStyled, Title} from "@/pages/pokemon/styled";
 import {fetchData} from "@/services/api";
+import useQuery from "@/hook/useQuery";
 
 export const PAGE_SIZE = 9
 
@@ -15,11 +18,20 @@ export interface Data {
 
 const Pokemon = (): JSX.Element => {
     const [currentPage, setCurrentPage] = useState<number>(1);
-    const [data, setData] = useState<Data>(null);
+    const {data, error, loading} = useQuery<Data>(
+        fetchData,
+        {
+            page: currentPage
+        }
+    );
 
-    useEffect(() => {
-        fetchData(currentPage, setData)
-    }, [currentPage])
+    if (loading) {
+        return <Loading />
+    }
+
+    if (error) {
+        return <Error />
+    }
 
     return (
       <MainStyled>

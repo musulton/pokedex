@@ -1,11 +1,10 @@
 import {ImageLinkItem} from "@/types";
-import {Data, PAGE_SIZE} from "@/pages/pokemon";
+import {PAGE_SIZE} from "@/pages/pokemon";
 
 export const fetchData = async (
-    page: number,
-    setData: (payload: Data) => void
-): Promise<void> => {
-    const offset: number = page > 0 ? (page - 1) * PAGE_SIZE : 0
+    params: {[key: string]: string}
+): Promise<{ pokemon: Array<ImageLinkItem>; count: number }> => {
+    const offset: number = params?.page > 0 ? (params?.page - 1) * PAGE_SIZE : 0
     const pokemonList = await fetch(`${process.env.NEXT_PUBLIC_API_URL}?offset=${offset}&limit=${PAGE_SIZE}`)
     const pokemonListJson = await pokemonList.json()
     const pokemon: Array<ImageLinkItem> = []
@@ -20,8 +19,8 @@ export const fetchData = async (
         })
     }
 
-    setData({
+    return {
         count: pokemonListJson?.count,
         pokemon
-    })
+    }
 }
