@@ -4,10 +4,10 @@ import {useMemo} from "react";
 interface Props {
     currentPage: number
     totalCount: number
-    onChangePage: (number) => void
+    onChangePage: (page: number) => void
     pageSize: number
-    onChangeMaxPageLimit: (number) => void
-    onChangeMinPageLimit: (number) => void
+    onChangeMaxPageLimit: (page: number) => void
+    onChangeMinPageLimit: (page: number) => void
     maxPageLimit: number
     minPageLimit: number
 }
@@ -59,7 +59,7 @@ const Pagination = ({
         }
     };
 
-    const onPageNumberClick = (e) => {
+    const onPageNumberClick = (e: any) => {
         onChangePage(Number(e.target.id))
     }
 
