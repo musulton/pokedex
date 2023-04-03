@@ -10,6 +10,7 @@ interface Props {
     onChangeMinPageLimit: (page: number) => void
     maxPageLimit: number
     minPageLimit: number
+    pageNumberLimit: number
 }
 
 const Pagination = ({
@@ -83,7 +84,7 @@ const Pagination = ({
                             <button
                                 className={styles.pageNumberButton}
                                 key={page}
-                                id={page}
+                                id={String(page)}
                                 disabled={page === currentPage}
                                 onClick={onPageNumberClick}
                             >

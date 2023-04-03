@@ -2,7 +2,7 @@ import {ImageLinkItem} from "@/types";
 import {PAGE_SIZE} from "@/pages/pokemon";
 
 export const fetchData = async (
-    params: {[key: string]: string}
+    params: {page: number}
 ): Promise<{ pokemon: Array<ImageLinkItem>; count: number }> => {
     const offset: number = params?.page > 0 ? (params?.page - 1) * PAGE_SIZE : 0
     const pokemonList = await fetch(`${process.env.NEXT_PUBLIC_API_URL}?offset=${offset}&limit=${PAGE_SIZE}`)

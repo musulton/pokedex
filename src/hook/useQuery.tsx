@@ -7,10 +7,10 @@ interface UseFetch<T> {
 }
 
 const useFetch = <T, >(
-    query: (params: Object) => Promise<T>,
+    query: (params: any) => Promise<T>,
     params: { [key: string]: any }
 ): UseFetch<T> => {
-    const [data, setData] = useState<T>({});
+    const [data, setData] = useState<T>({} as T);
     const [fetching, setFetching] = useState<boolean>(true);
     const [error, setError] = useState<boolean>(false)
 

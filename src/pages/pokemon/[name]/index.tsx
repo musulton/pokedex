@@ -11,11 +11,9 @@ import {
     TypeName,
     TypeWrapper
 } from "@/pages/pokemon/[name]/styles";
-import {colors} from "@/pages/pokemon/styled";
 import {capitalize} from "@/utils/common";
 import pokemonBall from "@/assets/pokemon-ball.png"
 
-type Stat = Array<{ base_stat: number }>
 interface Props {
     pokemon: {
         name: string
@@ -24,7 +22,7 @@ interface Props {
                 name: string
             }
         }>
-        stats: Array<{ stat: Stat }>
+        stats: Array<{ base_stat: number }>
         sprites: {
             other: {
                 dream_world: {
@@ -35,7 +33,11 @@ interface Props {
     },
 }
 
-const StatBar: React.FC<{ stats: Stat }> = ({ stats }: { stats: Stat }) => (
+interface StatBarProps {
+    stats: Array<{base_stat: number}>
+}
+
+const StatBar: React.FC<StatBarProps> = ({ stats }) => (
     <BaseStatWrapper>
         <BaseStatText>Base Stats Information</BaseStatText>
         <ProgressBar
@@ -80,13 +82,12 @@ const Character: React.FC<Props> = ({pokemon}) => {
                     {pokemon?.types?.map((item, idx) => (
                         <TypeName
                             key={idx}
-                            bgColor={colors[idx + 2]}
                         >
                             {item?.type?.name}
                         </TypeName>
                     ))}
                 </TypeWrapper>
-                <StatBar stats={pokemon?.stats as Stat} />
+                <StatBar stats={pokemon?.stats} />
             </LeftSection>
 
             <ImageStyled
